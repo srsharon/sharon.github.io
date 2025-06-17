@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Project Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fa; }
+    header { background: #2d2d2d; color: #fff; padding: 1em 2em; }
+    .container { max-width: 900px; margin: 2em auto; padding: 0 1em; }
+    h1, h2 { margin-top: 0; }
+    .projects { display: flex; flex-wrap: wrap; gap: 1.5em; }
+    .project-card {
+      background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 1em; width: calc(33% - 1em); min-width: 250px; box-sizing: border-box;
+      display: flex; flex-direction: column; align-items: flex-start;
+    }
+    .project-card img { max-width: 100%; border-radius: 4px; }
+    .project-card h3 { margin: 0.5em 0 0.3em 0; }
+    .project-card p { flex: 1; }
+    .project-card a { color: #0077cc; text-decoration: none; margin-top: 0.5em; }
+    footer { background: #2d2d2d; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+    @media (max-width: 800px) {
+      .projects { flex-direction: column; }
+      .project-card { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Project Portfolio</h1>
+    <p>Welcome to my portfolio! Here are some of my projects.</p>
+  </header>
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects">
+      <!-- Example Project Card -->
+      <div class="project-card">
+        <img src="project1.png" alt="Screenshot of Project 1">
+        <h3>Project Title 1</h3>
+        <p>This is a short description of the project. Highlight your role, technologies used, and what makes it interesting.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more project cards below -->
+      <div class="project-card">
+        <img src="project2.png" alt="Screenshot of Project 2">
+        <h3>Project Title 2</h3>
+        <p>Another project description goes here. You can link to live demos or repositories.</p>
+        <a href="https://your-project-link.com" target="_blank">Live Demo</a>
+      </div>
+      <!-- ... -->
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Your Name · <a href="mailto:your@email.com" style="color:#fff">Contact</a>
+  </footer>
+</body>
+</html>
